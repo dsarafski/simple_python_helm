@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.python_app.name }}
+spec:
+  selector:
+    app: {{ .Values.python_app.name }}
+  ports:
+  - protocol: "TCP"
+    nodePort: {{ .Values.python_app.node_port }}
+    port: {{ .Values.python_app.port }}
+    targetPort: {{ .Values.python_app.port }}
+  type: NodePort

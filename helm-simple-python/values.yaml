@@ -1,0 +1,6 @@
+python_app:
+  replicaCount: 1
+  image: dsarafski/simple-python-scrape:0.0.3
+  name: simple-python
+  port: 8081
+  node_port: 32765
