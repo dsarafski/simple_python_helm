@@ -35,7 +35,7 @@ On `localhost:81` you will be able to view the metrics \
 
 ### How to deploy the app inside the kubernetes cluster with helm
 Helm chart was created inside `./helm-simple-python/` folder \
-In order to run the app inside kubernetes use: \
+In order to run the app inside kubernetes:
 - Change your context with the k8s cluster you want to deploy the app \
 - Execute:
 `helm install <some-name-for-the-chart> ./helm-simple-python/` \
