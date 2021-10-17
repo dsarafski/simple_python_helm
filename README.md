@@ -16,9 +16,9 @@ Purpose for the code inside this repo is:
 #### On every 10 seconds both url /200 and /503 are queried for the response code and the mention metrics are exposed
 For metrics `sample_external_url_response_ms` two other metrics are exposed:
 
-- `sample_external_url_response_ms_count`: Number of times this function was called.
+- `sample_external_url_response_ms_count`: Number of times the function in the code which queries the url's was called.
 - `sample_external_url_response_ms_sum`: Total amount of time spent in this function.
-Prometheus's `rate` function allows calculation of both requests per second/milisecond, and latency over time from this data
+Prometheus's `rate` function allows calculation of both requests per second/millisecond, and latency over time from this data
 
 - You can run it either locally \
 `python3 ./python_app/simple_scrape.py`\
